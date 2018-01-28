@@ -1,7 +1,7 @@
 #!/bin/bash
 
 current=$(cd $(dirname $0) && pwd)
-files=('.vimrc' '.zprofile' '.zshenv' '.zshrc' '.tmux.conf')
+files=('.vimrc' '.zprofile' '.zshenv' '.zshrc' '.tmux.conf' '.xremap.conf')
 
 for file in ${files[@]}
 do
