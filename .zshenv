@@ -1,7 +1,7 @@
 # go
-GOPATH=$HOME/dev
-PATH=$PATH:$GOPATH/bin
-PATH=$PATH:/usr/lib/go-1.9/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/lib/go-1.9/bin
 
 if [ -e $HOME/.pyenv ]; then
   export PYENV_ROOT="$HOME/.pyenv"

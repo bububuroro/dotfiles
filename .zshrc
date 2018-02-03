@@ -16,7 +16,9 @@ compinit
 
 # aliases
 alias ll='ls -lF'
-alias grep='grep --color'
+alias grep='grep --color --exclude-dir=.git'
+alias tmux='tmux -u'
+alias dcs='docker-compose'
 
 
 # move
@@ -24,7 +26,7 @@ alias grep='grep --color'
 setopt auto_cd
 
 ## move only with dir name to directly under $HOME dirs
-cdpath=(.. ~ ~/src)
+cdpath=(.. ~)
 
 
 ## peco
@@ -42,3 +44,6 @@ bindkey '^]' peco-src
 # other
 ## English
 export LANG=en_US
+
+# local zshrc
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
