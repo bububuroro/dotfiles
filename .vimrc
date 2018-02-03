@@ -14,6 +14,9 @@ NeoBundle 'Shougo/vimfiler'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'nanotech/jellybeans.vim'
 
+" visualize indent
+NeoBundle 'Yggdroot/indentLine'
+
 call neobundle#end()
 
 filetype plugin indent on
@@ -60,3 +63,5 @@ colorscheme jellybeans
 
 " vimfiler
 let g:vimfiler_as_default_explorer=1
+
+autocmd BufRead,BufNewFile *.py setfiletype python
