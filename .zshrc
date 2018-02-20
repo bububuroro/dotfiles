@@ -26,7 +26,7 @@ alias dcs='docker-compose'
 setopt auto_cd
 
 ## move only with dir name to directly under $HOME dirs
-cdpath=(.. ~)
+cdpath=(.. ~ $GOPATH/src)
 
 
 ## peco
