@@ -8,3 +8,5 @@ if [ -e $HOME/.pyenv ]; then
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 fi
+
+export EDITOR=vim
