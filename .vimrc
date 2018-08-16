@@ -57,6 +57,7 @@ syntax on
 set shiftwidth=2
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
+set autoindent
 
 " colorschema
 colorscheme jellybeans
