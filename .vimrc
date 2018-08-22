@@ -54,10 +54,11 @@ set number
 set hlsearch
 set noswapfile
 syntax on
-set shiftwidth=2
 set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 set autoindent
+set expandtab
+filetype indent on
 
 " colorschema
 colorscheme jellybeans
@@ -65,4 +66,3 @@ colorscheme jellybeans
 " vimfiler
 let g:vimfiler_as_default_explorer=1
 
-autocmd BufRead,BufNewFile *.py setfiletype python
