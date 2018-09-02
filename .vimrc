@@ -9,6 +9,15 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimfiler'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
 
 " colorschema
 NeoBundle 'tomasr/molokai'
@@ -49,6 +58,21 @@ inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
 
+" colorschema
+colorscheme jellybeans
+
+" vimfiler
+let g:vimfiler_as_default_explorer=1
+
+" unite
+nnoremap <silent> ,g  :<C-u>Unite grep:<CR>
+nnoremap <silent> ,cg :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W>
+
+" ctags
+nnoremap <C-]> g<C-]>
+set tags=.ctags
+
+
 " others
 set number
 set hlsearch
@@ -58,11 +82,5 @@ set encoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 set autoindent
 set expandtab
-filetype indent on
-
-" colorschema
-colorscheme jellybeans
-
-" vimfiler
-let g:vimfiler_as_default_explorer=1
-
+set shiftwidth=2
+set tabstop=2
