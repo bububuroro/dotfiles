@@ -10,3 +10,6 @@ if [ -e $HOME/.pyenv ]; then
 fi
 
 export EDITOR=vim
+
+# local zshenv
+[ -f ~/.zshenv.local ] && source .zshenv.local
