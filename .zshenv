@@ -12,4 +12,4 @@ fi
 export EDITOR=vim
 
 # local zshenv
-[ -f ~/.zshenv.local ] && source .zshenv.local
+[ -f ~/.zshenv.local ] && source ~/.zshenv.local
