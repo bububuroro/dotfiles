@@ -63,6 +63,7 @@ colorscheme jellybeans
 
 " vimfiler
 let g:vimfiler_as_default_explorer=1
+cnoremap vf :<C-u>VimFilerBufferDir -split -simple -winwidth=35 -no-quit
 
 " unite
 nnoremap <silent> ,g  :<C-u>Unite grep:<CR>
