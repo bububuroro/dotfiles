@@ -18,6 +18,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 \     'unix' : 'gmake',
 \    },
 \ }
+NeoBundle 'plasticboy/vim-markdown'
 
 " colorschema
 NeoBundle 'tomasr/molokai'
@@ -72,6 +73,15 @@ nnoremap <silent> ,cg :<C-u>Unite grep:. -buffer-name=search-buffer<CR><C-R><C-W
 " ctags
 nnoremap <C-]> g<C-]>
 set tags=.ctags
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
+"let g:vim_markdown_folding_level = 4
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_emphasis_multiline = 0
+let g:vim_markdown_autowrite = 1
+let g:vim_markdown_edit_url_in = 'tab'
 
 
 " others
