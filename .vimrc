@@ -1,7 +1,6 @@
 " NeoBundle 
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
-
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -77,6 +76,7 @@ set tags=.ctags
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
 "let g:vim_markdown_folding_level = 4
+let g:vim_markdown_new_list_item_indent = 0
 let g:vim_markdown_toc_autofit = 1
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_emphasis_multiline = 0
